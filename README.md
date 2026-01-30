@@ -1,6 +1,6 @@
 # 🧩 DSA Practice in Java
 
-A **learning repository for Data Structures and Algorithms (DSA)** using Java programming. This repo is designed for **beginners to advanced learners**, featuring **well-documented code, problem-solving strategies, and practical exercises**.  
+A **learning repository for Data Structures and Algorithms (DSA)** using Java programming. This repo is designed for **beginners to advanced learners**, featuring **well-documented code, problem-solving strategies, exercises, and efficiency analysis**.  
 
 ---
 
@@ -8,9 +8,8 @@ A **learning repository for Data Structures and Algorithms (DSA)** using Java pr
 
 - Step-by-step roadmap for DSA in Java
 - Beginner-friendly → Advanced topics
-- Common **problem-solving patterns** included
-- Ready-to-use **Java implementations**
-- Exercises for practice at each step
+- Common **problem-solving patterns**
+- Exercises with **time & space complexity**
 - Mini projects to apply DSA concepts
 
 ---
@@ -22,197 +21,187 @@ A **learning repository for Data Structures and Algorithms (DSA)** using Java pr
 **Topics:**  
 - Variables, Data types, Operators  
 - Input/Output (`Scanner`, `System.out.println`)  
-- Conditionals (`if`, `switch`)  
+- Conditional statements (`if`, `switch`)  
 - Loops (`for`, `while`, `do-while`)  
 - Methods/functions  
 - Arrays & Strings  
 
 **Practice:**  
 - Print "Hello World"  
-- Sum of first N numbers  
-- Reverse a string  
-- Check palindrome  
-- Largest/smallest in an array  
+- Sum of first N numbers → **TC:** O(N), **SC:** O(1)  
+- Reverse a string → **TC:** O(N), **SC:** O(1)  
+- Check palindrome → **TC:** O(N), **SC:** O(1)  
+- Find largest/smallest in array → **TC:** O(N), **SC:** O(1)  
 
 ---
 
 ### **Step 2: Loops & Problem-Solving Patterns**
-**Goal:** Master iteration and basic patterns.  
 **Topics:**  
-- Nested loops & `for-each` loops  
+- Nested loops, `for-each` loops  
 - Patterns: **Two Pointers**, **Sliding Window**, **Fast & Slow Pointers**, **Prefix Sum**  
 - Basic recursion  
 
-**Practice:**  
-- Print patterns with numbers/stars  
-- Reverse an array in-place  
-- Max sum subarray (sliding window)  
-- Detect cycle in linked list  
+**Practice Examples:**  
+- Maximum sum subarray (Sliding Window) → **TC:** O(N), **SC:** O(1)  
+- Detect cycle in linked list (Fast & Slow) → **TC:** O(N), **SC:** O(1)  
+- Reverse an array using loop → **TC:** O(N), **SC:** O(1)  
 
 ---
 
 ### **Step 3: Arrays & Strings**
-**Goal:** Build confidence in linear structures.  
 **Topics:**  
-- 1D & 2D arrays  
-- Array operations: insert, delete, search  
+- 1D & 2D arrays, insertion, deletion, search  
 - Sorting: Bubble, Selection, Insertion, Merge, Quick  
 - Searching: Linear & Binary  
-- String operations & `StringBuilder`  
-- Array patterns: Rotate array, Prefix sum, Kadane’s algorithm  
+- String manipulation & StringBuilder  
+- Array patterns: Prefix sum, Kadane’s algorithm  
+
+**Complexity Overview:**  
+| Operation | Time Complexity | Space Complexity |
+|-----------|----------------|-----------------|
+| Linear Search | O(N) | O(1) |
+| Binary Search | O(log N) | O(1) |
+| Bubble/Selection/Insertion Sort | O(N²) | O(1) |
+| Merge Sort | O(N log N) | O(N) |
+| Quick Sort | O(N log N) avg, O(N²) worst | O(log N) recursion |
 
 **Practice:**  
-- Rotate array by K positions  
-- Find subarray with given sum  
-- Count duplicates  
-- Longest substring without repeating characters  
-- Reverse words in a sentence  
+- Rotate array → **TC:** O(N), **SC:** O(1)  
+- Subarray with sum K → **TC:** O(N) using prefix sum, **SC:** O(N)  
+- Longest substring without repeating characters → **TC:** O(N), **SC:** O(N)  
 
 ---
 
 ### **Step 4: Recursion & Backtracking**
-**Goal:** Solve problems using recursion.  
 **Topics:**  
-- Recursion basics, tail recursion  
+- Recursion: base case, recursive call, tail recursion  
 - Backtracking: subsets, permutations, N-Queens, Sudoku  
 - Divide & Conquer: Merge Sort, Quick Sort  
 
-**Practice:**  
-- Fibonacci & factorial  
-- Print all subsets/permutations  
-- N-Queens problem  
-- Maze solving  
+**Complexity Examples:**  
+- Fibonacci (recursive) → **TC:** O(2ⁿ), **SC:** O(N) recursion stack  
+- Factorial → **TC:** O(N), **SC:** O(N) recursion stack  
+- N-Queens → Exponential (≈O(N!)), **SC:** O(N²) board  
 
 ---
 
 ### **Step 5: Linked Lists**
-**Goal:** Learn dynamic linear structures.  
 **Topics:**  
-- Singly, Doubly, Circular Linked List  
+- Singly, Doubly, Circular linked lists  
 - Operations: insert, delete, search, reverse  
-- Fast & Slow pointer pattern  
+- Fast & slow pointer pattern  
 
-**Practice:**  
-- Reverse linked list  
-- Detect cycle  
-- Merge two sorted lists  
-- Remove duplicates  
+**Complexity Overview:**  
+| Operation | Singly | Doubly | Space |
+|-----------|--------|--------|-------|
+| Insert/Delete (head) | O(1) | O(1) | O(1) |
+| Insert/Delete (tail) | O(N) | O(1) | O(1) |
+| Search | O(N) | O(N) | O(1) |
+| Reverse | O(N) | O(N) | O(1) |
 
 ---
 
 ### **Step 6: Stack & Queue**
-**Goal:** Understand abstract data structures.  
 **Topics:**  
-- Stack (array & linked list) – push, pop, peek  
-- Queue – normal, circular, priority queue  
-- Deque (double-ended queue)  
+- Stack: push, pop, peek  
+- Queue: enqueue, dequeue, circular queue, priority queue  
+- Deque  
 
-**Practice:**  
-- Evaluate postfix expression  
-- Next greater element  
-- LRU cache implementation  
-- Sliding window maximum  
+**Complexity:**  
+| Operation | Stack | Queue | Deque |
+|-----------|-------|-------|-------|
+| Push/Pop | O(1) | - | O(1) |
+| Enqueue/Dequeue | - | O(1) | O(1) |
+| Peek/Front | O(1) | O(1) | O(1) |
 
 ---
 
 ### **Step 7: Hashing**
-**Goal:** Efficient lookups & counting.  
 **Topics:**  
 - HashMap, HashSet  
 - Frequency counting  
-- Patterns: Two-sum, Subarray sum K, Counting pairs  
+- Two-sum, subarray sum, counting pairs  
 
-**Practice:**  
-- First non-repeating character  
-- Two-sum problem  
-- Subarray sum K  
-- Count pairs with difference K  
+**Complexity:**  
+| Operation | Average TC | Worst-case TC | Space |
+|-----------|------------|---------------|-------|
+| Insert | O(1) | O(N) | O(N) |
+| Search | O(1) | O(N) | O(N) |
+| Delete | O(1) | O(N) | O(N) |
 
 ---
 
 ### **Step 8: Trees**
-**Goal:** Master hierarchical structures.  
 **Topics:**  
-- Binary Tree: Traversals, height, diameter, sum of nodes  
-- Binary Search Tree: insert, delete, search, LCA  
-- Optional: AVL Tree, Segment Tree, Trie  
+- Binary Tree & BST  
+- Traversals: preorder, inorder, postorder, level-order  
+- Height, diameter, sum of nodes  
+- Lowest Common Ancestor (LCA)  
 
-**Practice:**  
-- Level order traversal  
-- Check if tree is balanced  
-- Serialize & deserialize tree  
-- Find LCA  
+**Complexity Examples:**  
+- Traversals → **TC:** O(N), **SC:** O(N) recursion stack or queue  
+- Search in BST → **TC:** O(log N) avg, O(N) worst, **SC:** O(1)  
+- Insert/Delete in BST → **TC:** O(log N) avg, O(N) worst  
 
 ---
 
 ### **Step 9: Graphs**
-**Goal:** Solve network & connectivity problems.  
 **Topics:**  
 - Graph representation: adjacency list/matrix  
 - BFS & DFS  
 - Shortest path: Dijkstra, Bellman-Ford  
-- Minimum spanning tree: Kruskal, Prim  
-- Cycle detection, Topological sort  
+- MST: Kruskal, Prim  
 
-**Practice:**  
-- Detect cycle in undirected graph  
-- Connected components  
-- Shortest path  
-- Topological sort  
+**Complexity Examples:**  
+- BFS/DFS → **TC:** O(V + E), **SC:** O(V)  
+- Dijkstra (adjacency list + min-heap) → **TC:** O((V+E) log V)  
+- Bellman-Ford → **TC:** O(V*E), **SC:** O(V)  
 
 ---
 
 ### **Step 10: Dynamic Programming & Greedy**
-**Goal:** Optimize solutions & solve complex problems.  
-**DP Patterns:** 1D DP, 2D DP, Subset DP, Bitmask DP  
-**Greedy Patterns:** Activity selection, Interval scheduling, Coin change  
+**Topics:**  
+- 1D DP: Fibonacci, Climbing stairs  
+- 2D DP: Grid paths, LCS  
+- Subset DP: Knapsack  
+- Greedy: Activity selection, Interval scheduling  
 
-**Practice:**  
-- Longest increasing subsequence  
-- Maximum sum subarray with constraints  
-- Knapsack problem  
-- Coin change problem  
+**Complexity Examples:**  
+| Problem | TC | SC |
+|---------|----|----|
+| Fibonacci DP | O(N) | O(N) |
+| LCS | O(M*N) | O(M*N) |
+| 0/1 Knapsack | O(N*W) | O(N*W) |
+| Coin Change (Greedy) | O(N log N) | O(1) |
 
 ---
 
 ### **Step 11: Competitive Patterns & Mini Projects**
-**Key Patterns:**  
-- Two pointers & sliding window  
-- Fast & slow pointers  
-- Prefix sum / Kadane’s  
-- Recursion & backtracking  
-- Binary search variants  
-- Heap / PriorityQueue  
-- Graph BFS/DFS  
+**Patterns:** Two pointers, sliding window, fast & slow, prefix sum, recursion/backtracking, binary search, heap, graph BFS/DFS  
 
 **Mini Projects:**  
-- Maze solver (backtracking)  
-- Text editor undo/redo (stack)  
-- Airline booking system (priority queue)  
-- Social network recommendations (graph)  
-- Spell checker (Trie)  
+- Maze solver → Backtracking  
+- Text editor undo/redo → Stack  
+- Airline booking system → PriorityQueue  
+- Social network recommendations → Graph  
+- Spell checker → Trie  
 
 ---
 
 ## 🔗 Resources
 - [Java Documentation](https://docs.oracle.com/javase/8/docs/)  
 - [GeeksforGeeks – DSA](https://www.geeksforgeeks.org/data-structures/)  
-- [LeetCode](https://leetcode.com/)  
+- [LeetCode](https://leetcode.com/)
 
 ---
 
-## 💡 Tips for Beginners
-1. Code **daily**, start small, and gradually increase difficulty.  
-2. Focus on **understanding patterns**, not memorizing code.  
-3. Track your progress using a **GitHub repo**.  
-4. Solve **1-2 easy + 1 medium problem per day**.  
-5. Implement **Java Collections Framework** in practice.  
+## 💡 Tips
+1. Practice **daily**, gradually increasing problem difficulty.  
+2. Focus on **patterns and efficiency**.  
+3. Track progress in **GitHub repo**.  
+4. Solve **1-2 easy + 1 medium problem/day**.  
+5. Learn **Java Collections** for practical use.  
 
 ---
 
-## 🌟 Contribution
-Contributions are welcome! If you have **better implementations, exercises, or explanations**, feel free to **create a pull request**.  
-
----
-
-> “Practice is the key to mastering DSA.” – Keep coding daily! 💻✨
+> “Master both logic and efficiency. Time complexity is as important as correct output.” 💻✨
