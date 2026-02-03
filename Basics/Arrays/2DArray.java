@@ -1,4 +1,4 @@
-package Basics;
+package Basics.Arrays;
 
 class TwoDArray {
     public static void main(String args[]) {
