@@ -20,7 +20,5 @@ public class StringClass {
         System.out.println(sbf.charAt(0));
         System.out.println(sbf.substring(0, 5));
         System.out.println(str.split(" ")[1]);
-
-
     }
 }
