@@ -51,7 +51,7 @@ class ListDefinition {
     void linkedPrint() {
         LinkedList<Integer> numLinkedList = new LinkedList<>();
         numLinkedList.add(1);
-        numLinkedList.add(2);
+        numLinkedList.add(1);
         numLinkedList.add(3);
 
         System.out.println("LinkedList Output: " + numLinkedList);
@@ -65,7 +65,7 @@ class SetDefinition {
     void hashSetPrint() {
         HashSet<Integer> hashSet = new HashSet<>();
         hashSet.add(1);
-        hashSet.add(2);
+        hashSet.add(1);
         hashSet.add(3);
 
         System.out.println("HashSet Output: " + hashSet);
@@ -75,7 +75,7 @@ class SetDefinition {
     void treeSetPrint() {
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(1);
-        treeSet.add(2);
+        treeSet.add(1);
         treeSet.add(3);
 
         System.out.println("TreeSet Output: " + treeSet);
