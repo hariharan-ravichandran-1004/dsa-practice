@@ -26,11 +26,22 @@ class PatternLooping {
         diamondPattern(n);
         printTitle("Hallow Triangle");
         hallowTrianglePattern(n);
+        printTitle("Floyd's Triangle");
+        floydsTrianglePattern(n);
+        printTitle("Number Increasing Triangle");
+        numberIncreasingTriangle(n);
+        printTitle("Number Decreasing Triangle");
+        numberDecreasingTriangle(n);
+        printTitle("Pyramid Palindrome");
+        pyramidPalindromPattern(n);
+        printTitle("Butterfly");
+        butterflyPattern(n);
+
     }
 
     public static void printTitle(String title) {
         System.out.println();
-        System.out.printf("%s :",title);
+        System.out.printf("%s Pattern :",title);
         System.out.println();
         System.out.println();
 
@@ -171,5 +182,76 @@ class PatternLooping {
         }
     }
     
+    public static void floydsTrianglePattern(int n) {
+        int number = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                number++;
+                System.out.printf("%d   ", number);
+            }
+            endColumn();
+        }
+    }
+    
+    public static void numberIncreasingTriangle(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.printf("%d   ", j + 1);
+            }
+            endColumn();
+        }
+    }
+    
+    public static void numberDecreasingTriangle(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = n; j > i; j--) {
+                System.out.printf("%d   ", n - j + 1);
+            }
+            endColumn();
+        }
+    }
+    
+    public static void pyramidPalindromPattern(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
+                System.out.print("    ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.printf("%d   ", j + 1);
+            }
+            for (int j = i - 1; j > 0; j--) {
+                System.out.printf("%d   ", j);
+            }
+            endColumn();
+        }
+    }
+    
+    public static void butterflyPattern(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*   ");
+            }
+            for (int k = 0; k < 2 * (n - i); k++) {
+                System.out.print("    ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*   ");
+            }
+            endColumn();
+        }
+
+        for (int i = n; i >0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*   ");
+            }
+            for (int k = 0; k < 2 * (n - i); k++) {
+                System.out.print("    ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*   ");
+            }
+            endColumn();
+        }
+    }
 
 }
