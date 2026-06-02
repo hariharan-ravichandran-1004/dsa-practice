@@ -36,7 +36,12 @@ class PatternLooping {
         pyramidPalindromPattern(n);
         printTitle("Butterfly");
         butterflyPattern(n);
-
+        printTitle("Triangle");
+        triangle(n);
+        printTitle("Inverted Triangle");
+        invertedTriangle(n);
+        printTitle("Hallow Pyramid");
+        hallowPyramid(n);
     }
 
     public static void printTitle(String title) {
@@ -98,7 +103,7 @@ class PatternLooping {
             for (int s = 0; s < n - i; s++) {
                 System.out.print("    ");
             }
-            for (int j = 0; j <= i; j++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print("*   ");
             }
             endColumn();
@@ -240,7 +245,7 @@ class PatternLooping {
             endColumn();
         }
 
-        for (int i = n; i >0; i--) {
+        for (int i = n; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*   ");
             }
@@ -249,6 +254,47 @@ class PatternLooping {
             }
             for (int j = 0; j < i; j++) {
                 System.out.print("*   ");
+            }
+            endColumn();
+        }
+    }
+    
+    public static void triangle(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
+                System.out.print("-   ");
+            }
+            for (int j = 0; j < 2 * i - 1; j++) {
+                System.out.print("*   ");
+            }
+            endColumn();
+        }
+    }
+    
+    public static void invertedTriangle(int n) {
+        for (int i = n; i > 0; i--) {
+            for (int s = 0; s < n - i; s++) {
+                System.out.print("-   ");
+            }
+            for (int j = 0; j < 2 * i - 1; j++) {
+                System.out.print("*   ");
+            }
+            endColumn();
+        }
+    }
+
+    public static void hallowPyramid(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
+                System.out.print("-   ");
+            }
+            for (int j = 0; j <= 2 * i; j++) {
+                if (j==0||i==n-1||j==2*i) {
+                    System.out.print("*   ");
+                } else {
+                    System.out.print("    ");
+                }
+               
             }
             endColumn();
         }
