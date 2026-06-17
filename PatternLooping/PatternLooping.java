@@ -28,9 +28,9 @@ class PatternLooping {
         hallowTrianglePattern(n);
         printTitle("Floyd's Triangle");
         floydsTrianglePattern(n);
-        printTitle("Number Increasing Triangle");
+        printTitle("Number Increasing Triangle (Row wise");
         numberIncreasingTriangle(n);
-        printTitle("Number Decreasing Triangle");
+        printTitle("Number Decreasing Triangle (Row wise)");
         numberDecreasingTriangle(n);
         printTitle("Pyramid Palindrome");
         pyramidPalindromPattern(n);
@@ -42,6 +42,10 @@ class PatternLooping {
         invertedTriangle(n);
         printTitle("Hallow Pyramid");
         hallowPyramid(n);
+        printTitle("Increasing Number Triangle (Continuous)");
+        increasingNumberTriangle(n);
+        printTitle("Decreasing Number Triangle (Continuous)");
+        decreasingNumberTriangle(n);
     }
 
     public static void printTitle(String title) {
@@ -295,6 +299,37 @@ class PatternLooping {
                     System.out.print("    ");
                 }
                
+            }
+            endColumn();
+        }
+    }
+
+    // Numbering patterns
+
+    public static void increasingNumberTriangle(int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                count++;
+                System.out.print(count + "  ");
+            }
+            endColumn();
+        }
+    }
+    
+    public static void decreasingNumberTriangle(int n) {
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                count++;
+            }
+        }
+        count++;
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                count--;
+                System.out.print(count + "  ");
             }
             endColumn();
         }
