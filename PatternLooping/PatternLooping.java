@@ -46,11 +46,22 @@ class PatternLooping {
         increasingNumberTriangle(n);
         printTitle("Decreasing Number Triangle (Continuous)");
         decreasingNumberTriangle(n);
+        printTitle("Pascal's Triangle");
+        pascalTriangle(n);
+        printTitle("Alphabet Pattern");
+        alphabetPattern(n);
+        printTitle("Reverse Alphabet Pattern");
+        reverseAlphabetPattern(n);
+        printTitle("End of Pattern Looping");
     }
 
     public static void printTitle(String title) {
         System.out.println();
-        System.out.printf("%s Pattern :",title);
+        if(title.equals("End of Pattern Looping")){
+            System.out.printf("-------- %s --------",title);
+        } else {
+            System.out.printf("%s :",title);
+        }
         System.out.println();
         System.out.println();
 
@@ -335,4 +346,73 @@ class PatternLooping {
         }
     }
 
+    public static void pascalTriangle(int n) {
+
+        // Loop for each row
+        for (int i = 0; i < n; i++) {
+
+            // Print spaces before the numbers
+            int spaces = n - i - 1;
+
+            for (int s = 0; s < spaces; s++) {
+                System.out.print("  ");
+            }
+
+            // First number in every row is always 1
+            int number = 1;
+
+            // Print numbers in the current row
+            for (int j = 0; j <= i; j++) {
+
+                // Print the current number
+                System.out.print(number + "   ");
+
+                // Calculate the next number
+                number = number * (i - j) / (j + 1);
+            }
+
+            // Move to the next line
+            endColumn();
+        }
+    }
+
+    public static void alphabetPattern(int n) {
+        char alphabet = 'A';
+        int alphabetCount = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            for (int space = 0; space < n - i; space++) {
+                System.out.print("    ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print(alphabet + "   ");
+                alphabetCount++;
+                alphabet = (char) ('A' + alphabetCount % 26);
+
+            }
+
+            endColumn();
+        }
+
+    }
+
+    public static void reverseAlphabetPattern(int n) {
+        char alphabet = 'Z';
+        int alphabetCount = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            for (int space = 0; space < n - i; space++) {
+                System.out.print("    ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print(alphabet + "   ");
+                alphabetCount++;
+                alphabet = (char) ('Z' - alphabetCount % 26);
+            }
+
+            endColumn();
+        }
+    }
 }
