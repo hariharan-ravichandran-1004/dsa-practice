@@ -1,207 +1,236 @@
-# 🧩 DSA Practice in Java
+# 🚀 Data Structures & Algorithms in Java (Expert Roadmap)
 
-A **learning repository for Data Structures and Algorithms (DSA)** using Java programming. This repo is designed for **beginners to advanced learners**, featuring **well-documented code, problem-solving strategies, exercises, and efficiency analysis**.  
-
----
-
-## 🚀 Features
-
-- Step-by-step roadmap for DSA in Java
-- Beginner-friendly → Advanced topics
-- Common **problem-solving patterns**
-- Exercises with **time & space complexity**
-- Mini projects to apply DSA concepts
+A structured, beginner-to-advanced roadmap for mastering **Data Structures & Algorithms using Java**, designed specifically for **Product-based company interview preparation**.
 
 ---
 
-## 📚 Step-by-Step Roadmap
+# 📌 Overview
 
-### **Step 1: Java Basics**
-**Goal:** Learn Java syntax and write simple programs.  
-**Topics:**  
-- Variables, Data types, Operators  
-- Input/Output (`Scanner`, `System.out.println`)  
-- Conditional statements (`if`, `switch`)  
-- Loops (`for`, `while`, `do-while`)  
-- Methods/functions  
-- Arrays & Strings  
+This repository helps you:
 
-**Practice:**  
-- Print "Hello World"  
-- Sum of first N numbers → **TC:** O(N), **SC:** O(1)  
-- Reverse a string → **TC:** O(N), **SC:** O(1)  
-- Check palindrome → **TC:** O(N), **SC:** O(1)  
-- Find largest/smallest in array → **TC:** O(N), **SC:** O(1)  
+- Build strong DSA fundamentals
+- Learn problem-solving patterns
+- Improve coding interview performance
+- Track structured progression from basics to advanced topics
 
 ---
 
-### **Step 2: Loops & Problem-Solving Patterns**
-**Topics:**  
-- Nested loops, `for-each` loops  
-- Patterns: **Two Pointers**, **Sliding Window**, **Fast & Slow Pointers**, **Prefix Sum**  
-- Basic recursion  
+# 🧭 Learning Approach
 
-**Practice Examples:**  
-- Maximum sum subarray (Sliding Window) → **TC:** O(N), **SC:** O(1)  
-- Detect cycle in linked list (Fast & Slow) → **TC:** O(N), **SC:** O(1)  
-- Reverse an array using loop → **TC:** O(N), **SC:** O(1)  
+- Focus on **patterns over problems**
+- Always start with **brute force → optimize**
+- Analyze **Time & Space Complexity for every solution**
+- Practice consistently (daily coding habit)
 
 ---
 
-### **Step 3: Arrays & Strings**
-**Topics:**  
-- 1D & 2D arrays, insertion, deletion, search  
-- Sorting: Bubble, Selection, Insertion, Merge, Quick  
-- Searching: Linear & Binary  
-- String manipulation & StringBuilder  
-- Array patterns: Prefix sum, Kadane’s algorithm  
+# 🛠️ Tech Stack
 
-**Complexity Overview:**  
-| Operation | Time Complexity | Space Complexity |
-|-----------|----------------|-----------------|
-| Linear Search | O(N) | O(1) |
-| Binary Search | O(log N) | O(1) |
-| Bubble/Selection/Insertion Sort | O(N²) | O(1) |
-| Merge Sort | O(N log N) | O(N) |
-| Quick Sort | O(N log N) avg, O(N²) worst | O(log N) recursion |
-
-**Practice:**  
-- Rotate array → **TC:** O(N), **SC:** O(1)  
-- Subarray with sum K → **TC:** O(N) using prefix sum, **SC:** O(N)  
-- Longest substring without repeating characters → **TC:** O(N), **SC:** O(N)  
+- Language: **Java**
+- Platforms: LeetCode / HackerRank
+- Version Control: Git & GitHub
 
 ---
 
-### **Step 4: Recursion & Backtracking**
-**Topics:**  
-- Recursion: base case, recursive call, tail recursion  
-- Backtracking: subsets, permutations, N-Queens, Sudoku  
-- Divide & Conquer: Merge Sort, Quick Sort  
+# 📊 Time & Space Complexity (Quick Reference)
 
-**Complexity Examples:**  
-- Fibonacci (recursive) → **TC:** O(2ⁿ), **SC:** O(N) recursion stack  
-- Factorial → **TC:** O(N), **SC:** O(N) recursion stack  
-- N-Queens → Exponential (≈O(N!)), **SC:** O(N²) board  
-
----
-
-### **Step 5: Linked Lists**
-**Topics:**  
-- Singly, Doubly, Circular linked lists  
-- Operations: insert, delete, search, reverse  
-- Fast & slow pointer pattern  
-
-**Complexity Overview:**  
-| Operation | Singly | Doubly | Space |
-|-----------|--------|--------|-------|
-| Insert/Delete (head) | O(1) | O(1) | O(1) |
-| Insert/Delete (tail) | O(N) | O(1) | O(1) |
-| Search | O(N) | O(N) | O(1) |
-| Reverse | O(N) | O(N) | O(1) |
+| Complexity | Name           | Example |
+|------------|---------------|---------|
+| O(1)       | Constant      | Array access |
+| O(log N)   | Logarithmic   | Binary Search |
+| O(N)       | Linear        | Array traversal |
+| O(N log N) | Linearithmic  | Merge Sort |
+| O(N²)      | Quadratic     | Nested loops |
+| O(2ⁿ)      | Exponential   | Subsets |
+| O(N!)      | Factorial     | Permutations |
 
 ---
 
-### **Step 6: Stack & Queue**
-**Topics:**  
-- Stack: push, pop, peek  
-- Queue: enqueue, dequeue, circular queue, priority queue  
-- Deque  
+# 🧭 Roadmap
 
-**Complexity:**  
-| Operation | Stack | Queue | Deque |
-|-----------|-------|-------|-------|
-| Push/Pop | O(1) | - | O(1) |
-| Enqueue/Dequeue | - | O(1) | O(1) |
-| Peek/Front | O(1) | O(1) | O(1) |
+## 🟢 Phase 1: Java Basics
 
----
+### Topics
+- Variables & Data Types
+- Conditions & Loops
+- Functions / Methods
+- Arrays (1D)
+- Strings basics
 
-### **Step 7: Hashing**
-**Topics:**  
-- HashMap, HashSet  
-- Frequency counting  
-- Two-sum, subarray sum, counting pairs  
-
-**Complexity:**  
-| Operation | Average TC | Worst-case TC | Space |
-|-----------|------------|---------------|-------|
-| Insert | O(1) | O(N) | O(N) |
-| Search | O(1) | O(N) | O(N) |
-| Delete | O(1) | O(N) | O(N) |
+### Practice
+- Pattern printing
+- Reverse string
+- Palindrome check
+- Max / Min in array
 
 ---
 
-### **Step 8: Trees**
-**Topics:**  
-- Binary Tree & BST  
-- Traversals: preorder, inorder, postorder, level-order  
-- Height, diameter, sum of nodes  
-- Lowest Common Ancestor (LCA)  
+## 🟡 Phase 2: Problem Solving Patterns
 
-**Complexity Examples:**  
-- Traversals → **TC:** O(N), **SC:** O(N) recursion stack or queue  
-- Search in BST → **TC:** O(log N) avg, O(N) worst, **SC:** O(1)  
-- Insert/Delete in BST → **TC:** O(log N) avg, O(N) worst  
+### Topics
+- Two Pointers
+- Sliding Window (basic)
+- Prefix Sum
+- Recursion basics
 
 ---
 
-### **Step 9: Graphs**
-**Topics:**  
-- Graph representation: adjacency list/matrix  
-- BFS & DFS  
-- Shortest path: Dijkstra, Bellman-Ford  
-- MST: Kruskal, Prim  
+## 🟠 Phase 3: Arrays & Strings (Core DSA)
 
-**Complexity Examples:**  
-- BFS/DFS → **TC:** O(V + E), **SC:** O(V)  
-- Dijkstra (adjacency list + min-heap) → **TC:** O((V+E) log V)  
-- Bellman-Ford → **TC:** O(V*E), **SC:** O(V)  
+### Topics
+- Searching (Linear, Binary Search)
+- Sorting (Bubble, Merge, Quick)
+- String manipulation
+- Kadane’s Algorithm
 
----
-
-### **Step 10: Dynamic Programming & Greedy**
-**Topics:**  
-- 1D DP: Fibonacci, Climbing stairs  
-- 2D DP: Grid paths, LCS  
-- Subset DP: Knapsack  
-- Greedy: Activity selection, Interval scheduling  
-
-**Complexity Examples:**  
-| Problem | TC | SC |
-|---------|----|----|
-| Fibonacci DP | O(N) | O(N) |
-| LCS | O(M*N) | O(M*N) |
-| 0/1 Knapsack | O(N*W) | O(N*W) |
-| Coin Change (Greedy) | O(N log N) | O(1) |
+### Problems
+- Maximum Subarray Sum
+- Longest Substring Without Repeating Characters
+- Binary Search problems
+- Subarray Sum Equals K
 
 ---
 
-### **Step 11: Competitive Patterns & Mini Projects**
-**Patterns:** Two pointers, sliding window, fast & slow, prefix sum, recursion/backtracking, binary search, heap, graph BFS/DFS  
+## 🔵 Phase 4: Recursion & Backtracking
 
-**Mini Projects:**  
-- Maze solver → Backtracking  
-- Text editor undo/redo → Stack  
-- Airline booking system → PriorityQueue  
-- Social network recommendations → Graph  
-- Spell checker → Trie  
+### Topics
+- Recursion tree
+- Subsets & permutations
+- Backtracking
 
----
-
-## 🔗 Resources
-- [Java Documentation](https://docs.oracle.com/javase/8/docs/)  
-- [GeeksforGeeks – DSA](https://www.geeksforgeeks.org/data-structures/)  
-- [LeetCode](https://leetcode.com/)
+### Problems
+- Fibonacci
+- Generate subsets
+- N-Queens
 
 ---
 
-## 💡 Tips
-1. Practice **daily**, gradually increasing problem difficulty.  
-2. Focus on **patterns and efficiency**.  
-3. Track progress in **GitHub repo**.  
-4. Solve **1-2 easy + 1 medium problem/day**.  
-5. Learn **Java Collections** for practical use.  
+## 🟣 Phase 5: Linked List
+
+### Topics
+- Singly & Doubly Linked List
+- Fast & Slow pointers
+
+### Problems
+- Reverse Linked List
+- Detect Cycle
+- Merge Two Lists
 
 ---
 
-> “Master both logic and efficiency. Time complexity is as important as correct output.” 💻✨
+## 🟤 Phase 6: Stack & Queue
+
+### Topics
+- Stack (LIFO)
+- Queue (FIFO)
+- Monotonic Stack
+
+### Problems
+- Valid Parentheses
+- Next Greater Element
+- Min Stack
+
+---
+
+## ⚫ Phase 7: Hashing
+
+### Topics
+- HashMap / HashSet
+- Frequency counting
+
+### Problems
+- Two Sum
+- Group Anagrams
+- Longest Consecutive Sequence
+
+---
+
+## 🟩 Phase 8: Trees
+
+### Topics
+- Binary Tree
+- BST
+- DFS / BFS Traversals
+
+### Problems
+- Height of Tree
+- Diameter of Tree
+- Lowest Common Ancestor
+
+---
+
+## 🟦 Phase 9: Graphs
+
+### Topics
+- BFS / DFS
+- Adjacency List
+- Topological Sort
+
+### Problems
+- Number of Islands
+- Clone Graph
+- Dijkstra Algorithm
+
+---
+
+## 🟥 Phase 10: Dynamic Programming
+
+### Topics
+- Memoization
+- Tabulation
+- 1D / 2D DP
+
+### Problems
+- Climbing Stairs
+- House Robber
+- Coin Change
+- Longest Common Subsequence
+
+---
+
+## 🟪 Phase 11: Advanced Topics
+
+### Topics
+- Trie
+- Heap / Priority Queue
+- Binary Search on Answer
+- Interval Problems
+
+### Problems
+- Merge Intervals
+- Median of Stream
+- Word Search (Trie)
+
+---
+
+# 📈 Study Strategy
+
+- Solve 2–3 problems daily
+- Revise patterns weekly
+- Maintain GitHub commits
+- Track time complexity for every solution
+
+---
+
+# 💡 Interview Tip
+
+> “Interviewers care more about your thinking process than the final answer.”
+
+Always explain:
+- Approach
+- Optimization
+- Complexity
+
+---
+
+# 🎯 Goal
+
+To become confident in solving **Expert-level DSA problems using Java** with strong fundamentals and pattern recognition.
+
+---
+
+# ⭐ Keep Going
+
+Consistency > Intelligence  
+Practice > Theory  
+Patterns > Memorization
