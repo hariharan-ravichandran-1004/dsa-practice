@@ -7,7 +7,7 @@ public class BinarySearch {
         System.out.println();
 
         int[] num = { 10, 20, 30, 40, 50, 80, 100, 102, 150 };
-        int target = 102;
+        int target = 2;
         int low = 0;
         int high = num.length - 1;
         int i = 0;
