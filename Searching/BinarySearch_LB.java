@@ -3,7 +3,7 @@ package Searching;
 public class BinarySearch_LB {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 3, 3, 4, 5 };
-        int target = 3;
+        int target = 64;
         int lb = 0;
         int ub = arr.length;
         int result = lowerBound(lb, ub, arr, target);
