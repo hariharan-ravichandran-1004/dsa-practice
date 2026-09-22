@@ -7,6 +7,7 @@ public class constructorDefiniton {
         // Creating object of ProjectDetails class
         // This will call the default constructor
         ProjectDetails pd = new ProjectDetails();
+        System.out.println("Created an object of: " + pd.getClass().getSimpleName());
 
         // Creating object of ResourcesInformation class
         // This will call the parameterized constructor

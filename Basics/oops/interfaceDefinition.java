@@ -13,19 +13,19 @@ public class interfaceDefinition {
         // Calling the method implemented from interface
         d.sound();
     }
-}
 
-// Interface (contract)
-interface Animal {
-    void sound(); // abstract method (no body)
-}
+    // Interface (contract)
+    interface Animal {
+        void sound(); // abstract method (no body)
+    }
 
-// Class implementing the interface
-class Dog implements Animal {
+    // Class implementing the interface
+    static class Dog implements Animal {
 
-    // Providing implementation for the interface method
-    @Override
-    public void sound() {
-        System.out.println("Dog barks");
+        // Providing implementation for the interface method
+        @Override
+        public void sound() {
+            System.out.println("Dog barks");
+        }
     }
 }

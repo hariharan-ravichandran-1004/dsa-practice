@@ -7,6 +7,7 @@ public class finalStaticDef {
 
         // FINAL → value cannot be changed after assignment
         final int x = 10;
+        System.out.println("Final value: " + x);
 
         // x = 20; ❌ Not allowed (will give error)
 
@@ -14,7 +15,12 @@ public class finalStaticDef {
         Counter c1 = new Counter();
         Counter c2 = new Counter();
 
-        // Both objects share same static variable
+        // Both objects report the same value — the variable belongs to the
+        // class, not to either object.
+        c1.showCount();
+        c2.showCount();
+
+        // Same variable, reached through the class name instead
         System.out.println("Count: " + Counter.count);
 
         // Calling static method using class name
@@ -31,6 +37,11 @@ class Counter {
     // Constructor
     Counter() {
         count++; // Increases every time object is created
+    }
+
+    // Instance method reading the shared static variable
+    void showCount() {
+        System.out.println("Count seen by this object: " + count);
     }
 }
 

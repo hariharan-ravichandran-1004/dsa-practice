@@ -9,21 +9,26 @@ public class DFSPractice {
         root.left = new Node("1");
         root.right = new Node("2");
         root.right.right = new Node("3");
-        inorderTraversal(root);
+        System.out.println(inorderTraversal(root));
     }
 
-    public static List<Integer> inorderTraversal(Node root) {
-        ArrayList preorderResult = new ArrayList();
+    public static List<String> inorderTraversal(Node root) {
+        List<String> inorderResult = new ArrayList<>();
         if (root == null)
-            return new ArrayList<>();
+            return inorderResult;
 
-        inorderTraversal(root.left);
-        if (root.data != "null") {
-            preorderResult.add(root.data);
+        // visit the left subtree.
+        inorderResult.addAll(inorderTraversal(root.left));
+
+        // visit the root node.
+        if (!"null".equals(root.data)) {
+            inorderResult.add(root.data);
         }
-        inorderTraversal(root.right);
-        
-        return new ArrayList<>();
+
+        // visit the right subtree.
+        inorderResult.addAll(inorderTraversal(root.right));
+
+        return inorderResult;
     }
 
 }

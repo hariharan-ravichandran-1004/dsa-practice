@@ -19,13 +19,13 @@ abstract class Rest {
 class HTTP extends Rest {
     @Override
     String getRequest() {
-        // TODO Auto-generated method stub
+        // Concrete implementation of the abstract method declared in Rest
         return "GET Method";
     }
     
     @Override
     String postRequest() {
-        // TODO Auto-generated method stub
+        // Every abstract method must be implemented by the concrete subclass
         return "POST Method";
     }
 }

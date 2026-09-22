@@ -33,8 +33,7 @@ public class Practice {
         int target = 5;
         int res = search(nums, target);
         twoSum(nums, target);
-        System.out.println();
-        // System.out.println(res);
+        System.out.println(res);
 
     }
 }

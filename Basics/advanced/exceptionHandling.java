@@ -9,7 +9,9 @@ public class exceptionHandling {
         }catch(Exception e){
             System.out.println(e);
         } finally {
-            System.out.println();
+            // The assignment above never completed, so 'a' still holds its
+            // initial value — the exception aborted the try block mid-statement.
+            System.out.println("a = " + a);
             System.out.println("------ end ------");
         }
     }
