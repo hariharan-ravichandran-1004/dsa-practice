@@ -1,4 +1,4 @@
-package Searching;
+package Searching.BinarySearch;
 
 public class LastOccurrence {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package Searching;
+package Searching.BinarySearch;
 
-public class BinarySearch_LB {
+public class LowerBound {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 3, 3, 4, 5 };
         int target = 64;

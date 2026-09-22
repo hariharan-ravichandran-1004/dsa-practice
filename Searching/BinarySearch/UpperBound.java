@@ -1,6 +1,6 @@
-package Searching;
+package Searching.BinarySearch;
 
-public class BinarySearch_UB {
+public class UpperBound {
     public static void main(String[] args) {
         int target = 4;
         int[] arr = { 1, 2, 3, 4, 4, 4, 5, 6 };
